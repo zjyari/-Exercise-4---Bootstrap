@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayao Miyazaki Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        .profile-card {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .section-title {
+            border-bottom: 2px solid #20c997;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            color: #20c997;
+        }
+        .awards-title {
+            border-bottom-color: #dc3545;
+            color: #dc3545;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #e3f2fd;
+            color: #0d6efd;
+            font-weight: bold;
+        }
+        .custom-shadow {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row g-5 mb-5">
+            <div class="col-lg-5">
+                <div class="profile-card">
+                    <img src="hayao-miyazaki.jpg" alt="Hayao Miyazaki Portrait" class="img-fluid w-100">
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <h1 class="display-5 fw-bold mb-2">Hayao Miyazaki Profile</h1>
+                <p class="lead text-muted mb-4 h4">Legendary Animator</p>
+                
+                <p class="mb-5 fs-5">
+                    Hayao Miyazaki is a world-renowned Japanese animator, director, producer, screenwriter, and manga artist. 
+                    He is the co-founder of Studio Ghibli and has created some of the most beloved animated films.
+                </p>
+
+                <div class="text-center mb-5">
+                    <h5 class="text-primary mb-3">Hayao Miyazaki making ramen</h5>
+                    <video src="hayao-miyazaki-ramen.mp4" class="img-fluid rounded custom-shadow" style="max-height: 300px;" autoplay loop muted controls></video>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h4 class="section-title">Achievements</h4>
+                        <ul class="list-unstyled fs-6" style="line-height: 1.8;">
+                            <li>• Spirited Away (Oscar Winner)</li>
+                            <li>• Totoro (Cultural Icon)</li>
+                            <li>• Lifetime Achievement Award</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="section-title awards-title">Awards</h4>
+                        <ul class="list-unstyled fs-6" style="line-height: 1.8;">
+                            <li>• Academy Award</li>
+                            <li>• Golden Bear</li>
+                            <li>• Honorary Oscar</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <img src="ghibli-char.jpg" alt="Ghibli Collage" class="img-fluid rounded custom-shadow w-100">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mb-4 section-title w-50 mx-auto" style="border-bottom: 2px solid #6c757d; color: #495057;">Explore His Masterpieces</h2>
+        <div class="accordion custom-shadow" style="border-radius: 8px; overflow: hidden;" id="filmAccordion">
+            
+            <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#film1">
+                        Spirited Away (2001)
+                    </button>
+                </h2>
+                <div id="film1" class="accordion-collapse collapse show" data-bs-parent="#filmAccordion">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <p>Won the Academy Award for Best Animated Feature in 2003. It follows Chihiro, a young girl who enters a spirit world and must work in a bathhouse to rescue her parents.</p>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <img src="assets/spiritedaway.jpg" alt="Spirited Away Scene" class="img-fluid rounded custom-shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 border-top">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#film2">
+                        My Neighbor Totoro (1988)
+                    </button>
+                </h2>
+                <div id="film2" class="accordion-collapse collapse" data-bs-parent="#filmAccordion">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <p>One of the most iconic animated films ever made. It tells the story of two young sisters who move to the countryside and befriend friendly forest spirits, including the giant Totoro.</p>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <img src="assets/totoro.jpg" alt="Totoro Scene" class="img-fluid rounded custom-shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-0 border-top">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#film3">
+                        Howl's Moving Castle (2004)
+                    </button>
+                </h2>
+                <div id="film3" class="accordion-collapse collapse" data-bs-parent="#filmAccordion">
+                    <div class="accordion-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <p>A magical tale about Sophie, a young hatter cursed by a witch to look like an old woman. She finds shelter in Howl's moving castle and sets off on an adventure to break the spell.</p>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <img src="assets/howlscastle.jpg" alt="Howl's Moving Castle Scene" class="img-fluid rounded custom-shadow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
